@@ -1,0 +1,258 @@
+:root {
+  --wood: #b35900;
+  --ebony: #0d0d0d;
+  --metal: #b3b3b3;
+}
+
+#pegbox {
+  display: grid;
+  grid-template-areas: 
+    ". . left1 mid1 right1 peg1 button1"
+    "button2 peg2 left2 mid2 right2 . ."
+    ". . left3 mid3 right3 peg3 button3"
+    "button4 peg4 left4 mid4 right4 . .";
+  height: 100px;
+  width: 155px;
+  margin: -75px auto;
+  transform: scale(0.5);
+}
+
+.left1 {
+  grid-area: left1;
+  background-color: var(--wood);
+}
+
+.mid1 {
+  grid-area: mid1;
+  background-color: brown;
+}
+
+.right1 {
+  grid-area: right1;
+  background-color: var(--wood);
+}
+
+.peg1 {
+  grid-area: peg1;
+  background-color: var(--ebony);
+  margin: 10% 0;
+  
+}
+
+.button1 {
+  grid-area: button1;
+  background-color: var(--ebony);
+  border-radius: 50%;
+  width: 80%;
+}
+
+.button2 {
+  grid-area: button2;
+  background-color: var(--ebony);
+  border-radius: 50%;
+  width: 80%;
+}
+
+.peg2 {
+  grid-area: peg2;
+  background-color: var(--ebony);
+  margin: 10% 0;
+}
+
+.left2 {
+  grid-area: left2;
+  background-color: var(--wood);
+}
+
+.mid2 {
+  grid-area: mid2;
+  background-color: brown;
+}
+
+.right2 {
+  grid-area: right2;
+  background-color: var(--wood);
+}
+
+.left3 {
+  grid-area: left3;
+  background-color: var(--wood);
+}
+
+.mid3 {
+  grid-area: mid3;
+  background-color: brown;
+}
+
+.right3 {
+  grid-area: right3;
+  background-color: var(--wood);
+}
+
+.peg3 {
+  grid-area: peg3;
+  background-color: var(--ebony);
+  margin: 10% 0;
+}
+
+.button3 {
+  grid-area: button3;
+  background-color: var(--ebony);
+  border-radius: 50%;
+  width: 80%; 
+}
+
+.button4 {
+  grid-area: button4;
+  background-color: var(--ebony);
+  border-radius: 50%;
+  width: 80%;
+}
+
+.peg4 {
+  grid-area: peg4;
+  background-color: var(--ebony);
+  margin: 10% 0;
+}
+
+.left4 {
+  grid-area: left4;
+  background-color: var(--wood);
+}
+
+.mid4 {
+  grid-area: mid4;
+  background-color: brown;
+}
+
+.right4 {
+  grid-area: right4;
+  background-color: var(--wood);
+}
+
+
+#violin-body {
+  position: relative;
+  justify-content: center;
+  height: 90vh;
+  width: 90vh;
+  margin: 18vh auto;
+}
+
+.neck {
+  position: relative;
+  margin: 50px auto -200px;
+  height: 60vh;
+  width: 33px;
+  z-index: 1;
+  background: repeating-linear-gradient(
+    to left,
+    var(--ebony),
+    var(--ebony) 6px,
+    var(--metal) 6px,
+    var(--metal) 7px);
+}
+
+.neckext {
+  position: relative;
+  height: 200px;
+  width: 33px;
+  margin: 175px auto -357px;
+  z-index: 1;
+  background: repeating-linear-gradient(
+    to left,
+    transparent,
+    transparent 6px,
+    var(--metal) 6px,
+    var(--metal) 7px);
+}  
+
+.upper {
+  position: relative;
+  margin: 0 0 -25vh 17vw;
+  height: 40%;
+  width: 41%;
+  background-color: var(--wood); 
+  border-radius: 40% 40% 0 0;
+}
+
+.cbout-right {
+  position: relative;
+  float: right;
+  margin-right: 10vw;
+  margin-top: -3vh;
+  height: 22%;
+  width: 20%;
+  z-index: 1;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+
+.cbout-left {
+  position: relative;
+  float: left;
+  margin-left: 10vw;
+  margin-top: 13vh;
+  height: 22%;
+  width: 20%;
+  z-index: 1;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+
+.fhole-right {
+  position: relative;
+  margin: 5vh 40vw 0 33vw;
+  z-index: 1;
+  font-family: "Tangerine", cursive;
+  transform: scaleX(-1) rotate(160deg) scale(6);
+ 
+}
+
+.fhole-left {
+  font-family: "Tangerine", cursive;
+  position: relative;
+  margin: 20vh 50vw -7vh 25vw;
+  z-index: 1;
+  transform: rotate(160deg) scale(6);
+ 
+}
+
+.chin {
+  position: relative;
+  width: 10vw;
+  height: 8vh;
+  margin-left: 20vw;
+  margin-top: -53px;
+  z-index: 2;
+  border-radius: 50%;
+  background-color: var(--ebony);
+}
+
+.tailtop {
+  position: relative;
+  height: 25px;
+  width: 40px;
+  margin: -100px auto;
+  border-radius: 0 0 50% 50%;
+  background-color: var(--ebony);
+}
+
+.taillower {
+  position: relative;
+  height: 88px;
+  width: 20px;
+  margin: 14vh auto;
+  z-index: 1;
+  background-color: var(--ebony);
+}
+
+.lower {
+  position: relative;
+  margin: auto;
+  height: 40%;
+  width: 50%;
+  background-color: var(--wood);
+  border-radius: 25% 25% 45% 45%;
+  box-shadow: 
+}
